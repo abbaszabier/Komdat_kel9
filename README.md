@@ -18,24 +18,24 @@
 
 ## Modules
 
-<h1 align="center><img src="https://wiki.dolibarr.org/images/thumb/c/c7/List_of_modules_en.png/300px-List_of_modules_en.png"></h1>
+<img src="https://wiki.dolibarr.org/images/thumb/c/c7/List_of_modules_en.png/300px-List_of_modules_en.png">
 
 - Aktivasi modul adalah langkah wajib kedua. Modul mana yang akan Anda aktifkan bergantung pada apa yang ingin Anda lakukan dengan Dolibarr. Dalam kebanyakan kasus, Anda mungkin ingin menggunakan semua modul. Anda harus mengaktifkan setiap modul satu per satu. Misalnya, untuk mengelola perusahaan, Anda mungkin mengaktifkan setidaknya modul Pihak ketiga, Faktur, dan Produk, tetapi Anda juga bisa mengaktifkan lebih banyak lagi.
 - Untuk mengaktifkan modul, masuk ke halaman "Home-> Setup-> Modules" dan klik tombol 'on / off' di kolom "Status" untuk mengaktifkannya.
 - Modul sudah aktif jika tombol 'on / off' terlihat seperti ini:
 
-    ![Active Module](https://wiki.dolibarr.org/index.php?title=File:On_off_button_on.png)
+<img src="https://wiki.dolibarr.org/images/f/fd/On_off_button_on.png">
 
 - Modul tidak aktif jika tombol 'on / off' terlihat seperti ini:
 
-    ![Inactive Module](https://wiki.dolibarr.org/index.php?title=File:On_off_button_off.png)
+    ![Inactive Module](https://wiki.dolibarr.org/images/7/72/On_off_button_off.png)
 
 - Jika Anda tidak yakin dengan fungsi suatu modul, Anda dapat mengaktifkannya dan melihat menu item baru apa yang muncul di Dolibarr (bilah horizontal). Dan setelah mengaktifkan modul, periksa apakah Anda mengizinkan fitur baru yang diaktifkan. Anda dapat mengaktifkan atau menonaktifkan modul kapan pun Anda mau.
 - Setelah modul diaktifkan, boleh jadi modul tersebut memerlukan pengaturan lebih lanjut (klik ikon pengaturan yang muncul di sebelah kanan baris modul jika modul memang membutuhkan pengaturan).
 
 ## Display
 
-    ![Display](https://wiki.dolibarr.org/index.php?title=File:Display_settings_EN.png)
+    ![Display](https://wiki.dolibarr.org/images/thumb/5/54/Display_settings_EN.png/300px-Display_settings_EN.png)
 
 - Di halaman 'Display', Anda dapat mengatur bahasa default aplikasi dan tampilan serta nuansa layar. Untuk penggunaan pertama, Anda dapat membiarkannya dan menggunakan pengaturan default.
 
@@ -45,9 +45,9 @@
 'Tema skin default'
 - Di Dolibarr Anda memiliki dua skin berbeda:
 - Eldy:
-    ![Eldy](https://wiki.dolibarr.org/index.php?title=File:Eldy_Theme_thumb.png)
+    ![Eldy](https://wiki.dolibarr.org/images/7/71/Eldy_Theme_thumb.png)
 - Md:
-    ![Md](https://wiki.dolibarr.org/index.php?title=File:Md_theme_thumb.png)
+    ![Md](https://wiki.dolibarr.org/images/4/43/Md_theme_thumb.png)
 
 - Skin lain dapat diunduh di dolistore [dolistore](https://www.dolistore.com/4-skins)
 Anda juga dapat mempersonalisasi warna skin, dan visual di pengaturan ini
