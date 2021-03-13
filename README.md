@@ -16,11 +16,9 @@
 ## Company / Organization
 - Langkah pertama yang harus Anda lakukan adalah menentukan informasi perusahaan / organisasi Anda. Untuk melakukan ini, dari halaman muka, pilih menu "Home-> Setup-> Company / Organization" dan tambahkan informasi untuk perusahaan / organisasi Anda.
 
-    ![modul](https://4.bp.blogspot.com/-6dRdIL2WQGw/WNfs8Ul0KnI/AAAAAAAAGjw/_TmOk2h3mIgRc7Z0Uw1kYLx7bIDaZ-Z4wCLcB/s1600/Screenshot_2.jpg)
-
 ## Modules
 
-    ![List of Modules](https://wiki.dolibarr.org/index.php?title=File:List_of_modules_en.png)
+<h1 align="center><img src="https://wiki.dolibarr.org/images/thumb/c/c7/List_of_modules_en.png/300px-List_of_modules_en.png"></h1>
 
 - Aktivasi modul adalah langkah wajib kedua. Modul mana yang akan Anda aktifkan bergantung pada apa yang ingin Anda lakukan dengan Dolibarr. Dalam kebanyakan kasus, Anda mungkin ingin menggunakan semua modul. Anda harus mengaktifkan setiap modul satu per satu. Misalnya, untuk mengelola perusahaan, Anda mungkin mengaktifkan setidaknya modul Pihak ketiga, Faktur, dan Produk, tetapi Anda juga bisa mengaktifkan lebih banyak lagi.
 - Untuk mengaktifkan modul, masuk ke halaman "Home-> Setup-> Modules" dan klik tombol 'on / off' di kolom "Status" untuk mengaktifkannya.
