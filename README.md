@@ -21,8 +21,7 @@ Proses Instalasi :
     ```
 2.  Mengunduh **dolibarr** 13.0.1-4 ke dalam direktori kita
     ```bash
-    $ wget -c https://sourceforge.net/projects/dolibarr/files/Dolibarr%20installer%20for%20Debian-Ubuntu%20%28DoliDeb%29/13.0.1/dolibarr_13.0.1-4_all.deb/download -O       
-    dolibarr_13.0.1-4_all.deb
+    $ wget -c https://sourceforge.net/projects/dolibarr/files/Dolibarr%20installer%20for%20Debian-Ubuntu%20%28DoliDeb%29/13.0.1/dolibarr_13.0.1-4_all.deb/download -O       dolibarr_13.0.1-4_all.deb
     ```
 3. Aktivasi database menggunakan MYSQL
     ```
