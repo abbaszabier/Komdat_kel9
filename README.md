@@ -16,7 +16,7 @@
 - RAM minimal 64 Mb+
 - MySQL 5.1+ (Jangan gunakan MySQL versi 5.5.40 atau 5.5.41, karena pada versi ini terdapat critical bugs seputar data loss).
 
-Alternatif database selain MySQL yang bisa Anda gunakan adalah: MariaDB 5.1+, dan PostgreSQL 9.1.0+
+Alternatif database selain MySQL yang bisa Anda gunakan adalah: MariaDB 5.1+, atau PostgreSQL 9.1.0+
 
 
 ### Proses Instalasi :
@@ -167,7 +167,7 @@ Di tab ini, Anda dapat memilih behavior entri menu yang tidak sah. Secara defaul
 'Dolibarr Import Module'
 - Metode yang disarankan untuk mengimpor data adalah dengan menggunakan Modul Impor Dolibarr. Akan ada wizard yang akan memandu Anda langkah demi langkah dalam mengimpor data.
 
-- Untuk mengimpor file:
+Untuk mengimpor file:
 
 - Buka menu Tools - New Import.
 - Langkah 1: Pilih salah satu set data yang telah ditentukan untuk mencocokkan data Anda.
@@ -175,13 +175,13 @@ Di tab ini, Anda dapat memilih behavior entri menu yang tidak sah. Secara defaul
 - Langkah 3: Jelajahi dan Pilih file yang akan diunggah dari komputer Anda ke server Dolibarr. 
 - Langkah 4: Petakan kolom file ke kolom dataset. Kolom kiri mencantumkan bidang yang ditemukan di file yang diunggah. Kolom kanan mencantumkan bidang yang tersedia di Dolibarr. Anda dapat memindahkan bidang di kolom kiri ke atas atau ke bawah dengan drag and drop dari panah, untuk menyelaraskan setiap bidang file dengan bidang Dolibarr yang benar. Jika bidang dalam file masukan akan diabaikan / tidak diimpor, pindahkan ke bagian bawah yang bertuliskan "File sumber bidang tidak diimpor."
 - Langkah 5: Jalankan simulasi impor. Periksa field separator dan string separator yang cocok dengan tata letak file Anda. Jika file memiliki column headers, ini harus diabaikan dengan menggunakan "Spanning Boundaries".
-- Klik "Jalankan Simulasi Impor" untuk memulai. Simulasi akan memeriksa nilai di field dan menampilkan laporan kesalahan. Jika tidak ada kesalahan, Anda dapat mengklik "Start final import" untuk memasukkan data. Data yang diimpor akan ditambahkan ke data yang sudah ada.
+- Langkah 6: Klik "Jalankan Simulasi Impor" untuk memulai. Simulasi akan memeriksa nilai di field dan menampilkan laporan kesalahan. Jika tidak ada kesalahan, Anda dapat mengklik "Start final import" untuk memasukkan data. Data yang diimpor akan ditambahkan ke data yang sudah ada.
 
-- Semua data diimpor ke Dolibarr dengan tambahan "import_key" yang sesuai dengan tanggal impor untuk membantu menyelesaikan masalah yang terkait dengan impor tertentu. Dengan editor SQL akan relatif mudah untuk menemukan baris impor yang dimaksud.
+Semua data diimpor ke Dolibarr dengan tambahan "import_key" yang sesuai dengan tanggal impor untuk membantu menyelesaikan masalah yang terkait dengan impor tertentu. Dengan editor SQL akan relatif mudah untuk menemukan baris impor yang dimaksud.
 
 ## Mass Export
 
-- Anda juga dapat mengekspor data dari Dolibarr menggunakan Export Module.
+Anda juga dapat mengekspor data dari Dolibarr menggunakan Export Module.
 
 - Langkah 1: Buka Menu -> Tools -> New Export dan pilih kumpulan data yang telah ditentukan sebelumnya.
 - Langkah 2: Pilih profil ekspor yang telah ditentukan sebelumnya (oleh Anda) atau pilih secara manual field yang ingin Anda sertakan dalam file ekspor.
