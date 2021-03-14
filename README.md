@@ -75,6 +75,8 @@
     - Konfigurasi database
     - Apabila telah berhasil, maka bisa melanjutkan proses dengan **next step**
     - Set user admin untuk login ke **Dolibarr**
+    - Setelah berhasil konfigurasi maka bisa login untuk masuk ke Dolibarr
+    - Tampilan homepage 
     
 # Konfigurasi
 [`^ kembali ke atas ^`](#)
