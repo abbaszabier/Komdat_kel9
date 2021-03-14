@@ -10,11 +10,15 @@
 [`^ kembali ke atas ^`](#)
 
 ### Kebutuhan Sistem :
-- Unix, Linux atau Windows.
+- Unix, Linux atau Windows (Khusus windows 7, Visual C++ Redistributable for Visual Studio 2012 Update 4 harus sudah terinstall).
 - Apache Web server 1.3+.
-- PHP 5.2+.
-- MySQL 5.0+.
+- PHP 5.6.0+
 - RAM minimal 64 Mb+
+- MySQL 5.1+ (Jangan gunakan MySQL versi 5.5.40 atau 5.5.41, karena pada versi ini terdapat critical bugs seputar data loss).
+Alternatif database selain MySQL yang bisa Anda gunakan adalah:
+- MariaDB 5.1+
+- PostgreSQL 9.1.0+
+
 
 ### Proses Instalasi :
 1. Menginstall terlebih dahulu package yang dibutuhkan
@@ -152,6 +156,7 @@ Di tab ini, Anda dapat memilih behavior entri menu yang tidak sah. Secara defaul
 
 
 # Maintenance
+[`^ kembali ke atas ^`](#)
 
 ## Mass Import
 
@@ -187,6 +192,7 @@ Di tab ini, Anda dapat memilih behavior entri menu yang tidak sah. Secara defaul
 - Setelah beberapa detik, tautan ke file akan ditampilkan untuk diunduh.
 
 # Otomatisasi
+[`^ kembali ke atas ^`](#)
 
 Apabila masih mengalami kesulitan dalam proses instalasi **Dolibarr**, ada cara alternatif yang lebih mudah. Cara pertama yaitu menggunakan `script shell` yang otomatis akan menjalankan semua perintah instalasi pada terminal. Contoh `script shell` yang dapat kita gunakan adalah setup.sh
 
@@ -258,6 +264,8 @@ Cara kedua yaitu dengan menggunakan layanan yang tersedia pada *web-hosting prov
 
 
 # Pembahasan
+[`^ kembali ke atas ^`](#)
+
 **Dolibarr** adalah project opensource berbasis pada server WAMP, MAMP atau LAMP. Dolibar berbasiskan web yang dapat dijalankan diberbagai operating system. Aplikasi ini dikembangkan dengan menggunakan bahasa pemrograman php dan database mysql.
 Dalam aplikasi Dolibarr ini memiliki beberapa modul utama yaitu:
 1. Direktori untuk Customers, Suppliersatau Prospects
@@ -283,7 +291,15 @@ Dalam aplikasi Dolibarr ini memiliki beberapa modul utama yaitu:
 
 # Referensi
 1. [About Dolibarr](https://www.dolibarr.org/) - Dolibarr
-2. [Install using Installatron](https://installatron.com/apps?q=dolibarr) - Dolibarr
-3. [Install using Softaculous](http://www.softaculous.com/apps/erp/Dolibarr) - Dolibarr
+2. [Prerequisite](https://wiki.dolibarr.org/index.php?title=Prerequisite) - Requirements
+3. [Installation](https://wiki.dolibarr.org/index.php?title=Installation_-_Upgrade) - Instalasi
+4. [Install using Installatron](https://installatron.com/apps?q=dolibarr) - Dolibarr
+5. [Install using Softaculous](http://www.softaculous.com/apps/erp/Dolibarr) - Dolibarr
+6. [Mass Import](https://wiki.dolibarr.org/index.php?title=Mass_imports) - Importing Data
+7. [Mass Export](https://wiki.dolibarr.org/index.php?title=Module_Exports_En) - Exporting Data
+8. [First Setup](https://wiki.dolibarr.org/index.php?title=First_setup) - Konfigurasi
+9. [General Information on Usage](https://wiki.dolibarr.org/index.php?title=General_information_on_usage) - Cara Penggunaan
+
+
 
 [`^ kembali ke atas ^`](#)
