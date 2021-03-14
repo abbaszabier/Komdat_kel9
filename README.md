@@ -89,6 +89,28 @@ Di tab ini, Anda dapat memilih behavior entri menu yang tidak sah. Secara defaul
 
 # Maintenance
 
+## Mass Import
+
+- Saat Dolibarr baru diinstal, database akan kosong. Dan Anda mungkin ingin mengimpor data yang sudah Anda punya daripada memasukkan data secara manual. 
+- Catatan: Mengimpor data lama kemungkinan akan membutuhkan banyak upaya / modifikasi dari file sumber untuk menghasilkan impor yang berhasil. Direkomendasikan untuk menggunakan LibreOffice / OpenOffice untuk "membuild" spreadsheet sumber tunggal (.ods) dan berulang kali Simpan file Sebagai CSV untuk setiap modifikasi / koreksi, karena set karakter penanganan / definisi struktur csv jauh lebih unggul daripada Excel untuk multibyte (beraksen) string teks.
+
+- Ada beberapa metode untuk mengimpor data ke Dolibarr, seperti dengan menggunakan OpenOffice atau menulis script import Anda sendiri, akan tetapi metode yang disarankan adalah dengan menggunakan Dolibarr Import Module.
+
+'Dolibarr Import Module'
+- Metode yang disarankan untuk mengimpor data adalah dengan menggunakan Modul Impor Dolibarr. Akan ada wizard yang akan memandu Anda langkah demi langkah dalam mengimpor data.
+
+- Untuk mengimpor file:
+
+- Buka menu Tools - New Import.
+- Langkah 1: Pilih salah satu set data yang telah ditentukan untuk mencocokkan data Anda.
+- Langkah 2: Pilih format file CSV / Excel (.xlsx). 
+- Langkah 3: Jelajahi dan Pilih file yang akan diunggah dari komputer Anda ke server Dolibarr. 
+- Langkah 4: Petakan kolom file ke kolom dataset. Kolom kiri mencantumkan bidang yang ditemukan di file yang diunggah. Kolom kanan mencantumkan bidang yang tersedia di Dolibarr. Anda dapat memindahkan bidang di kolom kiri ke atas atau ke bawah dengan drag and drop dari panah, untuk menyelaraskan setiap bidang file dengan bidang Dolibarr yang benar. Jika bidang dalam file masukan akan diabaikan / tidak diimpor, pindahkan ke bagian bawah yang bertuliskan "File sumber bidang tidak diimpor."
+- Langkah 5: Jalankan simulasi impor. Periksa field separator dan string separator yang cocok dengan tata letak file Anda. Jika file memiliki column headers, ini harus diabaikan dengan menggunakan "Spanning Boundaries".
+- Klik "Jalankan Simulasi Impor" untuk memulai. Simulasi akan memeriksa nilai di field dan menampilkan laporan kesalahan. Jika tidak ada kesalahan, Anda dapat mengklik "Start final import" untuk memasukkan data. Data yang diimpor akan ditambahkan ke data yang sudah ada.
+
+- Semua data diimpor ke Dolibarr dengan tambahan "import_key" yang sesuai dengan tanggal impor untuk membantu menyelesaikan masalah yang terkait dengan impor tertentu. Dengan editor SQL akan relatif mudah untuk menemukan baris impor yang dimaksud.
+
 # Otomatisasi
 
 # Cara Pemakaian
