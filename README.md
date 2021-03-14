@@ -8,8 +8,6 @@
 # Instalasi
 
 # Konfigurasi
-
-# Konfigurasi
 [`^ kembali ke atas ^`](#)
 - Setelah menyelesaikan penginstalan awal, Anda harus mengkonfigurasi parameter di Dolibarr agar sesuai dengan kebutuhan Anda.
 
@@ -49,9 +47,45 @@
 - Md:
     ![Md](https://wiki.dolibarr.org/images/4/43/Md_theme_thumb.png)
 
-- Skin lain dapat diunduh di dolistore [dolistore](https://www.dolistore.com/4-skins)
+- Skin lain dapat diunduh di [dolistore](https://www.dolistore.com/4-skins)
 Anda juga dapat mempersonalisasi warna skin, dan visual di pengaturan ini
 
+'Miscellanous'
+
+- Di bagian ini, Anda memiliki semua nilai default fitur seperti, fungsi javascript, panjang list, hari pertama dalam seminggu, dll.
+Anda juga dapat meletakkan fitur "Message of the Day" yang akan ditampilkan untuk semua pengguna.
+
+'Login Page'
+
+- Di bagian ini, Anda dapat menyesuaikan halaman login termasuk pesan login dan gambar latar belakang.
+
+## Menus
+
+<img src="https://wiki.dolibarr.org/images/thumb/1/1b/Menu_Setup.png/300px-Menu_Setup.png">
+
+- Di sini Anda dapat memilih menu manager yang ingin Anda gunakan untuk internal user dan eksternal user, serta untuk pengguna komputer atau smartphone. Menu manager akan mengubah tampilan label, order, dan organisasi pada menu kiri dan atas.
+
+'Menu Handlers'
+- Perangkat lunak ini dilengkapi dengan dua menu handlers yang berbeda:
+- Eldy: Ini adalah menu default, entri menu dipusatkan dan diberi hardcode. Anda dapat menambahkan entri pada menu ini tetapi tidak dapat mengubah entri menu default.
+- Auguria: Ini adalah menu manager database. Menu ini dapat disesuaikan sepenuhnya dengan kebutuhan Anda.
+
+- Catatan: Di tab Menu handlers, Anda dapat memilih menu untuk pengguna internal dan eksternal dan untuk komputer atau smartphone.
+
+'Menu Editor'
+Pada tab ini, Anda dapat menyesuaikan setiap entri menu dari menu auguria, atau entri tambahan dari menu eldy, dan membuat entri baru
+
+'Miscellaneous'
+Di tab ini, Anda dapat memilih behavior entri menu yang tidak sah. Secara default, entri menu yang tidak sah berwarna abu-abu, tetapi dapat disembunyikan.
+
+## Users
+
+- Langkah terakhir adalah membuat dan menetapkan izin pengguna. Hampir semua modul yang diaktifkan sebelumnya, tidak dapat diakses jika Anda tidak memberikan izin. Untuk melakukan ini, Anda dapat pergi ke menu Home -> Users & Groups untuk menentukan pengguna dan hak mereka. 
+- Perhatian, Anda harus mempertimbangkan untuk memeriksa dan mengatur ulang hak pengguna saat Anda mengaktifkan modul baru. Daftar hak yang tersedia bergantung pada modul yang diaktifkan. 
+- Direkomendasikan untuk mengonfigurasi izin setelah mengaktifkan modul yang ingin Anda gunakan. Untuk tindakan tertentu, jika Anda tidak memiliki hak untuk melakukan suatu tindakan, Dolibarr tidak akan menampilkan tindakan tersebut kepada Anda. Anda mungkin melewatkan beberapa fitur yang berguna atau penting. 
+- Untuk memberikan hak kepada pengguna atau diri Anda sendiri, jika Anda adalah administrator, buka Home -> Users & Groups, pilih pengguna yang diinginkan, lalu klik tab 'Permission'.
+
+- Anda dapat menghindari langkah-langkah konfigurasi ini untuk setiap pengguna yang baru dibuat, dengan mengkonfigurasi hak default (memberi hak secara otomatis setiap kali pengguna baru dibuat) dengan mengkonfigurasi izin default pada menu Advanced > Setup Security.
 
 # Maintenance
 
