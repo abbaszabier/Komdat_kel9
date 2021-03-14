@@ -11,14 +11,14 @@
 Proses Instalasi :
 
 1. Menginstall terlebih dahulu package yang dibutuhkan
-'''
+```
 $ sudo apt-get update
 $ sudo apt-get install apache2
 $ sudo apt-get install mysql-server
 $ sudo apt-get install libapache2-mod-php
 $ sudo apt-get install php
 $ sudo apt-get install php-mysql
-'''
+```
 3. Mengunduh **dolibarr** 13.0.1-4 ke dalam direktori kita
 4. Aktivasi database menggunakan MYSQL
 
