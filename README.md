@@ -231,7 +231,7 @@ Cara kedua yaitu dengan menggunakan layanan yang tersedia pada *web-hosting prov
 - Setelah menu atas dipilih, menu kiri muncul dengan berbagai tugas yang berkaitan dengan modul yang diaktifkan.
 - Misalnya, menu yang dapat Anda lihat setelah menu atas Produk / Layanan telah dipilih:
 
-<img src="https://wiki.dolibarr.org/images/thumb/0/0c/Product_module_lateral_menu_EN.png/800px-Product_module_lateral_menu_EN.png">
+<img src="https://wiki.dolibarr.org/images/0/0c/Product_module_lateral_menu_EN.png">
 
 - Perhatikan bahwa organisasi menu tergantung pada pilihan menu manager yang dikonfigurasi di Home-> Setup-> Menus.
 
@@ -280,7 +280,6 @@ Dalam aplikasi Dolibarr ini memiliki beberapa modul utama yaitu:
 18. PDF Generation of all elements
 19. Import and export toolsdan lain lain.
 
-Selain itu, aplikasi ini memiliki beberapa kelebihan yaitu :
 
 # Referensi
 [About Dolibarr](https://www.dolibarr.org/) - Dolibarr
