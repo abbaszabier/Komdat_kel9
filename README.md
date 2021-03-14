@@ -5,7 +5,22 @@
 
 # Sekilas Info
 **Dolibarr** merupakan software yang dibangun dengan penambahan modules, untuk mengelola perusahaan kecil atau menengah, freelancers atau yayasan. Dolibarr adalah project opensource berbasis pada server WAMP, MAMP atau LAMP. Dolibar berbasiskan web yang dapat dijalankan diberbagai operating system. Aplikasi ini dikembangkan dengan menggunakan bahasa pemrograman php dan database mysql. Aplikasi ini bersifat open source dan memiliki license GPL V.02.
+
 # Instalasi
+
+Proses Instalasi :
+
+1. Menginstall terlebih dahulu package yang dibutuhkan
+'''
+$ sudo apt-get update
+$ sudo apt-get install apache2
+$ sudo apt-get install mysql-server
+$ sudo apt-get install libapache2-mod-php
+$ sudo apt-get install php
+$ sudo apt-get install php-mysql
+'''
+3. Mengunduh **dolibarr** 13.0.1-4 ke dalam direktori kita
+4. Aktivasi database menggunakan MYSQL
 
 # Konfigurasi
 [`^ kembali ke atas ^`](#)
