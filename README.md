@@ -64,7 +64,11 @@ Proses Instalasi :
     
  9. Kunjungi alamat IP web server untuk meneruskan instalasi.
     - Pilih bahasa yang akan digunakan
-    - 
+    - Cek Prerequisites yang diperlukan, apabila sudah terpenuhi semua bisa melanjutkan proses dengan menekan tombol **start**
+    - Konfigurasi database
+    - Apabila telah berhasil, maka bisa melanjutkan proses dengan **next step**
+    - Set user admin untuk login ke **Dolibarr**
+    
 # Konfigurasi
 [`^ kembali ke atas ^`](#)
 - Setelah menyelesaikan penginstalan awal, Anda harus mengkonfigurasi parameter di Dolibarr agar sesuai dengan kebutuhan Anda.
@@ -183,53 +187,6 @@ Di tab ini, Anda dapat memilih behavior entri menu yang tidak sah. Secara defaul
 # Otomatisasi
 
 # Cara Pemakaian
-
-## Jalankan Aplikasi Dolibarr
-
-- Untuk memulai, luncurkan aplikasi, baik dengan mengklik ikon aplikasi Dolibarr yang telah diinstal pada desktop Anda atau dengan mengetik URL yang sesuai di browser web Anda (URL yakni https:// localhost/dolibarr/ untuk instalasi lokal tetapi dapat berbeda dalam kasus penginstalan manual, dalam hal ini akan tergantung pada konfigurasi server Web Anda).
-- Setelah meluncurkan aplikasi, Anda akan melihat halaman login dengan setidaknya 2 field berikut:
-- Login: login pengguna untuk terhubung. Jika ini adalah penggunaan pertama, Anda dapat menggunakan nama yang Anda setting pada langkah terakhir instalasi (mis. Admin). Field ini juga bisa diisi dengan email pengguna.
-- Password: kata sandi pengguna untuk terhubung. Jika ini adalah penggunaan pertama, ini adalah kata sandi yang dimasukkan pada langkah terakhir instalasi (mis. Changeme)
-<img src="https://wiki.dolibarr.org/images/thumb/e/ea/Identification.jpg/360px-Identification.jpg">
-
-## Homepage
-
-- Setelah masuk, Anda akan melihat halaman beranda. Tampilan ini berisi bilah menu (satu bilah horizontal dan satu bilah vertikal) dan lebih banyak informasi di tengah:
-- Sebuah kotak yang mengingatkan akun login Anda dan tanggal akses terakhir.
-- Kotak statistik yang terkait dengan semua modul yang diaktifkan.
-- Sebuah kotak yang memperlihatkan tabel 'tugas' (tabel yang berisi informasi tentang tugas yang harus diselesaikan dan tugas di belakang jadwal). Ringkasan.
-- Di bagian bawah mungkin ada kotak informasi lain. Daftar ini tergantung pada kotak yang Anda aktifkan melalui menu Home-> Setup-> Boxes.
-<img src="https://wiki.dolibarr.org/images/thumb/9/90/Dolibarr_Homepage_En.png/800px-Dolibarr_Homepage_En.png">
-
-## Menggunakan Menus 
-
-- Setiap menu di bilah horizontal terkait dengan satu modul. Ketika modul diaktifkan, menu terkaitnya muncul di bilah menu horizontal. Entri menu modul tidak muncul di menu sampai modul tersebut diaktifkan.
-- Untuk menggunakan modul, klik menu yang terkait dengan modul, menu muncul di bilah vertikal untuk melakukan berbagai tugas yang terkait dengan modul itu.
-- Misalnya, untuk membuat daftar produk dalam stok (fungsi disediakan oleh modul Produk dan Stok), klik pada menu Produk / Layanan:
-<img src="https://wiki.dolibarr.org/images/thumb/5/58/Access_to_product_module_en.png/300px-Access_to_product_module_en.png">
-
-- Setelah menu atas dipilih, menu kiri muncul dengan berbagai tugas yang berkaitan dengan modul yang diaktifkan.
-- Misalnya, menu yang dapat Anda lihat setelah menu atas Produk / Layanan telah dipilih:
-<img src="https://wiki.dolibarr.org/images/thumb/0/0c/Product_module_lateral_menu_EN.png/300px-Product_module_lateral_menu_EN.png">
-
-- Perhatikan bahwa organisasi menu tergantung pada pilihan menu manager yang dikonfigurasi di Home-> Setup-> Menus.
-
-## Objects
-
-- Objek adalah istilah umum tentang catatan yang dikelola oleh aplikasi. Contoh: pelanggan, pemasok, faktur, pesanan, proposal, acara agenda, pengguna, dsb..
-- Setiap objek dikelola oleh modul Dolibarr. Bergantung pada modul yang Anda aktifkan, beberapa objek mungkin muncul dalam aplikasi. Kebijakan Dolibarr adalah menggunakan cara kerja umum untuk setiap modul atau objek yang dikelola. Jadi, untuk setiap objek, Anda akan menemukan entri menu untuk Buat ("Objek Baru") dan entri menu untuk melihat list semua objek (menu ini disebut "Daftar"). Kemudian mengklik objek yang ditemukan dalam daftar, Anda dapat membaca semua properti objek yang diatur dalam beberapa tab. Tombol "Ubah" terlihat oleh pengguna yang memiliki hak untuk mengedit objek.
-- Misalnya, ini adalah tampilan menu kiri untuk mengelola third party dan third party cards yang dipilih:
-<img src="https://wiki.dolibarr.org/images/thumb/6/63/Third_party_card_en.png/800px-Third_party_card_en.png">
-
-- Selain itu, dalam tampilan daftar (mengklik menu "Daftar" di menu vertikal), simbol / tanda status akan muncul di kolom terakhir daftar objek. Simbol / papan nama bervariasi sesuai dengan status objek dalam alur kerja. Simbol / tanda status bergantung pada objek dan opsinya ditentukan dalam penyetelan modul yang didedikasikan untuk manajemen objek. Definisi default untuk tema Eldy adalah:
-- Statut0.png Status Draf - Objek belum divalidasi (Warna putih, tidak ada tindakan yang dapat dilakukan pada objek)
-- Statut1.png Status Tervalidasi - Objek divalidasi dan beberapa tindakan sekarang diharapkan pada objek (warna kuning).
-- Statut3.png Status yang lebih maju daripada Divalidasi - Beberapa tindakan telah dilakukan pada objek, tetapi masih ada beberapa tindakan yang diharapkan padanya (Warna sebagian kuning)
-- Statut4.png Diproses, Status Aktif atau Diaktifkan - Tidak ada tindakan khusus yang diharapkan untuk objek lagi, meskipun beberapa peristiwa mungkin masih terjadi (Warna hijau, berarti semuanya baik-baik saja saat ini)
-- Statut5.png Status Dibatalkan - Tidak ada tindakan khusus yang dapat dilakukan untuk objek ini (Warna putih dengan Salib, putih berarti "tidak ada tindakan yang dapat dilakukan" dan tanda silang berarti "lagi")
-- Statut8.png Status Kesalahan - Status ini berarti ada masalah kritis yang harus diperbaiki untuk objek (warna merah berarti kesalahan)
-
-
 
 # Pembahasan
 
