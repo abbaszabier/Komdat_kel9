@@ -195,9 +195,15 @@ Di tab ini, Anda dapat memilih behavior entri menu yang tidak sah. Secara defaul
 
 # Otomatisasi
 
-Apabila masih mengalami kesulitan dalam proses instalasi **Dolibarr**, ada cara alternatif yang lebih mudah. Cara pertama yaitu menggunakan script shell yang otomatis akan menjalankan semua perintah instalasi pada terminal. Contoh script shell yang dapat kita gunakan adalah setup.sh
+Apabila masih mengalami kesulitan dalam proses instalasi **Dolibarr**, ada cara alternatif yang lebih mudah. Cara pertama yaitu menggunakan `script shell` yang otomatis akan menjalankan semua perintah instalasi pada terminal. Contoh `script shell` yang dapat kita gunakan adalah setup.sh
 
-Cara kedua adalah dengan menggunakan layanan yang tersedia pada web-hosting provider. Dengan layanan tersebut kita hanya perlu satu kali klik untuk meng-install Prestashop. Berikut langkah-lankah untuk melakukannya : 
+Cara kedua yaitu dengan menggunakan layanan yang tersedia pada *web-hosting provider*. Dengan layanan tersebut kita hanya perlu satu kali klik untuk meng-install **Dolibarr**. Berikut langkah-lankah untuk melakukannya :
+1. Kita bisa mengunjungi *web-hosting provider* yang menyediakan *script* instalasi **Dolibarr** otomatis, seperti [Installatron](https://installatron.com/apps?q=dolibarr) atau [Softaculous](http://www.softaculous.com/apps/erp/Dolibarr).
+2. Apabila kita ingin menggunakan layanan dari [Installatron](http://installatron.com/prestashop).Maka, kita hanya perlu mengunjungi link tersebut lalu klik tombol **Install this Application**.
+
+    ![Installatron]()
+
+3. Setelah itu isi semua informasi yang dibutuhkan, lalu klik tombol **Install**.
 
 # Cara Pemakaian
 
