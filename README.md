@@ -19,15 +19,18 @@ Proses Instalasi :
     $ sudo apt-get install php
     $ sudo apt-get install php-mysql
     ```
+    
 2.  Mengunduh **Dolibarr** 13.0.1-4 ke dalam direktori kita
     ```
     $ wget -c https://sourceforge.net/projects/dolibarr/files/Dolibarr%20installer%20for%20Debian-Ubuntu%20%28DoliDeb%29/13.0.1/dolibarr_13.0.1-4_all.deb/download -O           
     dolibarr_13.0.1-4_all.deb
     ```
+    
 3. Aktivasi database menggunakan MYSQL
     ```
     $ sudo service mysql start
     ```
+    
 4. Membuat database baru dan user untuk database
     ```
     $ sudo mysql -u root -p
@@ -36,23 +39,29 @@ Proses Instalasi :
     GRANT ALL PRIVILEGES ON `db1`.* TO 'dolibarr1'@'localhost';
     FLUSH PRIVILEGES;
     ```
+    
 5. Install **Dolibarr**
     ```
     $ sudo dpkg -i dolibarr_13.0.1-4_all.deb
     ```
+    
     Jika mengalami kegagalan dalam proses instalasi yang disebabkan dependancy, untuk memperbaiki package-package yang bermasalah
     ```
     $ sudo apt-get install -f
     ```
+    
 6. Konfigurasi web server Apache
+
 7. Mengganti ownership agar bisa dibaca dan ditulis oleh semua user
     ```
     $ sudo chmod 777 /var/www
     ```
+    
 8. Restart Service
     ```
     $ sudo service apache2 restart ; sudo service mysql restart
     ```
+    
  9. Kunjungi alamat IP web server untuk meneruskan instalasi.
     - Pilih bahasa yang akan digunakan
     - 
