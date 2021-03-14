@@ -24,7 +24,7 @@
 - Untuk mengaktifkan modul, masuk ke halaman "Home-> Setup-> Modules" dan klik tombol 'on / off' di kolom "Status" untuk mengaktifkannya.
 - Modul sudah aktif jika tombol 'on / off' terlihat seperti ini:
 
-<img src="https://wiki.dolibarr.org/images/f/fd/On_off_button_on.png">
+    <img src="https://wiki.dolibarr.org/images/f/fd/On_off_button_on.png">
 
 - Modul tidak aktif jika tombol 'on / off' terlihat seperti ini:
 
@@ -35,7 +35,7 @@
 
 ## Display
 
-    ![Display](https://wiki.dolibarr.org/images/thumb/5/54/Display_settings_EN.png/300px-Display_settings_EN.png)
+<img src="https://wiki.dolibarr.org/images/thumb/5/54/Display_settings_EN.png/300px-Display_settings_EN.png">
 
 - Di halaman 'Display', Anda dapat mengatur bahasa default aplikasi dan tampilan serta nuansa layar. Untuk penggunaan pertama, Anda dapat membiarkannya dan menggunakan pengaturan default.
 
