@@ -147,6 +147,23 @@ Di tab ini, Anda dapat memilih behavior entri menu yang tidak sah. Secara defaul
 
 # Cara Pemakaian
 
+## Jalankan Aplikasi Dolibarr
+
+- Untuk memulai, luncurkan aplikasi, baik dengan mengklik ikon aplikasi Dolibarr yang telah diinstal pada desktop Anda atau dengan mengetik URL yang sesuai di browser web Anda (URL yakni https:// localhost/dolibarr/ untuk instalasi lokal tetapi dapat berbeda dalam kasus penginstalan manual, dalam hal ini akan tergantung pada konfigurasi server Web Anda).
+- Setelah meluncurkan aplikasi, Anda akan melihat halaman login dengan setidaknya 2 field berikut:
+- Login: login pengguna untuk terhubung. Jika ini adalah penggunaan pertama, Anda dapat menggunakan nama yang Anda setting pada langkah terakhir instalasi (mis. Admin). Field ini juga bisa diisi dengan email pengguna.
+- Password: kata sandi pengguna untuk terhubung. Jika ini adalah penggunaan pertama, ini adalah kata sandi yang dimasukkan pada langkah terakhir instalasi (mis. Changeme)
+<img src="https://wiki.dolibarr.org/images/thumb/e/ea/Identification.jpg/360px-Identification.jpg">
+
+## Homepage
+
+- Setelah masuk, Anda akan melihat halaman beranda. Tampilan ini berisi bilah menu (satu bilah horizontal dan satu bilah vertikal) dan lebih banyak informasi di tengah:
+- Sebuah kotak yang mengingatkan akun login Anda dan tanggal akses terakhir.
+- Kotak statistik yang terkait dengan semua modul yang diaktifkan.
+- Sebuah kotak yang memperlihatkan tabel 'tugas' (tabel yang berisi informasi tentang tugas yang harus diselesaikan dan tugas di belakang jadwal). Ringkasan.
+- Di bagian bawah mungkin ada kotak informasi lain. Daftar ini tergantung pada kotak yang Anda aktifkan melalui menu Home-> Setup-> Boxes.
+<img src="https://wiki.dolibarr.org/images/thumb/9/90/Dolibarr_Homepage_En.png/300px-Dolibarr_Homepage_En.png">
+
 # Pembahasan
 
 # Referensi
