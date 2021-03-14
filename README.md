@@ -44,7 +44,18 @@ Proses Instalasi :
     ```
     $ sudo apt-get install -f
     ```
-6. 
+6. Konfigurasi web server Apache
+7. Mengganti ownership agar bisa dibaca dan ditulis oleh semua user
+    ```
+    $ sudo chmod 777 /var/www
+    ```
+8. Restart Service
+    ```
+    $ sudo service apache2 restart ; sudo service mysql restart
+    ```
+ 9. Kunjungi alamat IP web server untuk meneruskan instalasi.
+    - Pilih bahasa yang akan digunakan
+    - 
 # Konfigurasi
 [`^ kembali ke atas ^`](#)
 - Setelah menyelesaikan penginstalan awal, Anda harus mengkonfigurasi parameter di Dolibarr agar sesuai dengan kebutuhan Anda.
