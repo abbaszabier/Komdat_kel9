@@ -111,6 +111,17 @@ Di tab ini, Anda dapat memilih behavior entri menu yang tidak sah. Secara defaul
 
 - Semua data diimpor ke Dolibarr dengan tambahan "import_key" yang sesuai dengan tanggal impor untuk membantu menyelesaikan masalah yang terkait dengan impor tertentu. Dengan editor SQL akan relatif mudah untuk menemukan baris impor yang dimaksud.
 
+## Mass Export
+
+- Anda juga dapat mengekspor data dari Dolibarr menggunakan Export Module.
+
+- Langkah 1: Buka Menu -> Tools -> New Export dan pilih kumpulan data yang telah ditentukan sebelumnya.
+- Langkah 2: Pilih profil ekspor yang telah ditentukan sebelumnya (oleh Anda) atau pilih secara manual field yang ingin Anda sertakan dalam file ekspor.
+- Langkah 3: Tambahkan filter apa pun yang mungkin ingin Anda tempatkan pada nilai bidang tersebut.
+- Langkah 4: Ubah posisi / kolom bidang di file ekspor. Anda dapat menyimpan pilihan yang telah Anda buat sebagai profil / template ekspor untuk digunakan di masa mendatang.
+- Langkah 5: Pilih format untuk file ekspor dari daftar dropdown. Format yang memungkinkan adalah CSV / TSV (File teks) atau XLS 2007/95 (file Excel asli). Klik Hasilkan.
+- Setelah beberapa detik, tautan ke file akan ditampilkan untuk diunduh.
+
 # Otomatisasi
 
 # Cara Pemakaian
