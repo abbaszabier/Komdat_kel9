@@ -15,9 +15,8 @@
 - PHP 5.6.0+
 - RAM minimal 64 Mb+
 - MySQL 5.1+ (Jangan gunakan MySQL versi 5.5.40 atau 5.5.41, karena pada versi ini terdapat critical bugs seputar data loss).
-Alternatif database selain MySQL yang bisa Anda gunakan adalah:
-- MariaDB 5.1+
-- PostgreSQL 9.1.0+
+
+Alternatif database selain MySQL yang bisa Anda gunakan adalah: MariaDB 5.1+, dan PostgreSQL 9.1.0+
 
 
 ### Proses Instalasi :
@@ -293,8 +292,8 @@ Dalam aplikasi Dolibarr ini memiliki beberapa modul utama yaitu:
 1. [About Dolibarr](https://www.dolibarr.org/) - Dolibarr
 2. [Prerequisite](https://wiki.dolibarr.org/index.php?title=Prerequisite) - Requirements
 3. [Installation](https://wiki.dolibarr.org/index.php?title=Installation_-_Upgrade) - Instalasi
-4. [Install using Installatron](https://installatron.com/apps?q=dolibarr) - Dolibarr
-5. [Install using Softaculous](http://www.softaculous.com/apps/erp/Dolibarr) - Dolibarr
+4. [Install using Installatron](https://installatron.com/apps?q=dolibarr) - Instalasi via Installatron
+5. [Install using Softaculous](http://www.softaculous.com/apps/erp/Dolibarr) - Instalasi via Softaculous
 6. [Mass Import](https://wiki.dolibarr.org/index.php?title=Mass_imports) - Importing Data
 7. [Mass Export](https://wiki.dolibarr.org/index.php?title=Module_Exports_En) - Exporting Data
 8. [First Setup](https://wiki.dolibarr.org/index.php?title=First_setup) - Konfigurasi
