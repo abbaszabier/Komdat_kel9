@@ -194,9 +194,13 @@ Cara kedua yaitu dengan menggunakan layanan yang tersedia pada *web-hosting prov
 1. Kita bisa mengunjungi *web-hosting provider* yang menyediakan *script* instalasi **Dolibarr** otomatis, seperti [Installatron](https://installatron.com/apps?q=dolibarr) atau [Softaculous](http://www.softaculous.com/apps/erp/Dolibarr).
 2. Apabila kita ingin menggunakan layanan dari [Installatron](http://installatron.com/prestashop).Maka, kita hanya perlu mengunjungi link tersebut lalu klik tombol **Install this Application**.
 
-    ![Installatron](https://user-images.githubusercontent.com/60084300/111055853-7eb58a00-84ac-11eb-9948-8fa2309d5c7b.png)
+    ![Installatron](https://user-images.githubusercontent.com/60084300/111055898-fa173b80-84ac-11eb-80a4-f377dd81a222.png)
 
 3. Setelah itu isi semua informasi yang dibutuhkan, lalu klik tombol **Install**.
+
+    ![form](https://user-images.githubusercontent.com/60084300/111055853-7eb58a00-84ac-11eb-9948-8fa2309d5c7b.png)
+    
+4. Tunggu hingga proses instalasi selesai
 
 # Cara Pemakaian
 
