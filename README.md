@@ -9,14 +9,14 @@
 # Instalasi
 [`^ kembali ke atas ^`](#)
 
-###Kebutuhan Sistem :
+### Kebutuhan Sistem :
 - Unix, Linux atau Windows.
 - Apache Web server 1.3+.
 - PHP 5.2+.
 - MySQL 5.0+.
 - RAM minimal 64 Mb+
 
-###Proses Instalasi :
+### Proses Instalasi :
 1. Menginstall terlebih dahulu package yang dibutuhkan
     ```
     $ sudo apt-get update
