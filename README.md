@@ -199,6 +199,7 @@ Di tab ini, Anda dapat memilih behavior entri menu yang tidak sah. Secara defaul
 - Kotak statistik yang terkait dengan semua modul yang diaktifkan.
 - Sebuah kotak yang memperlihatkan tabel 'tugas' (tabel yang berisi informasi tentang tugas yang harus diselesaikan dan tugas di belakang jadwal). Ringkasan.
 - Di bagian bawah mungkin ada kotak informasi lain. Daftar ini tergantung pada kotak yang Anda aktifkan melalui menu Home-> Setup-> Boxes.
+<img src="https://wiki.dolibarr.org/images/thumb/9/90/Dolibarr_Homepage_En.png/800px-Dolibarr_Homepage_En.png">
 
 ## Menggunakan Menus 
 
@@ -218,7 +219,7 @@ Di tab ini, Anda dapat memilih behavior entri menu yang tidak sah. Secara defaul
 - Objek adalah istilah umum tentang catatan yang dikelola oleh aplikasi. Contoh: pelanggan, pemasok, faktur, pesanan, proposal, acara agenda, pengguna, dsb..
 - Setiap objek dikelola oleh modul Dolibarr. Bergantung pada modul yang Anda aktifkan, beberapa objek mungkin muncul dalam aplikasi. Kebijakan Dolibarr adalah menggunakan cara kerja umum untuk setiap modul atau objek yang dikelola. Jadi, untuk setiap objek, Anda akan menemukan entri menu untuk Buat ("Objek Baru") dan entri menu untuk melihat list semua objek (menu ini disebut "Daftar"). Kemudian mengklik objek yang ditemukan dalam daftar, Anda dapat membaca semua properti objek yang diatur dalam beberapa tab. Tombol "Ubah" terlihat oleh pengguna yang memiliki hak untuk mengedit objek.
 - Misalnya, ini adalah tampilan menu kiri untuk mengelola third party dan third party cards yang dipilih:
-<img src="https://wiki.dolibarr.org/index.php?title=General_information_on_usage#/media/File%3AThird_party_card_en.png">
+<img src="https://wiki.dolibarr.org/images/thumb/6/63/Third_party_card_en.png/800px-Third_party_card_en.png">
 
 - Selain itu, dalam tampilan daftar (mengklik menu "Daftar" di menu vertikal), simbol / tanda status akan muncul di kolom terakhir daftar objek. Simbol / papan nama bervariasi sesuai dengan status objek dalam alur kerja. Simbol / tanda status bergantung pada objek dan opsinya ditentukan dalam penyetelan modul yang didedikasikan untuk manajemen objek. Definisi default untuk tema Eldy adalah:
 - Statut0.png Status Draf - Objek belum divalidasi (Warna putih, tidak ada tindakan yang dapat dilakukan pada objek)
