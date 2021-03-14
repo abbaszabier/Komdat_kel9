@@ -282,8 +282,8 @@ Dalam aplikasi Dolibarr ini memiliki beberapa modul utama yaitu:
 
 
 # Referensi
-[About Dolibarr](https://www.dolibarr.org/) - Dolibarr
-[Install using Installatron](https://installatron.com/apps?q=dolibarr) - Dolibarr
-[Install using Softaculous](http://www.softaculous.com/apps/erp/Dolibarr) - Dolibarr
+1. [About Dolibarr](https://www.dolibarr.org/) - Dolibarr
+2. [Install using Installatron](https://installatron.com/apps?q=dolibarr) - Dolibarr
+3. [Install using Softaculous](http://www.softaculous.com/apps/erp/Dolibarr) - Dolibarr
 
 [`^ kembali ke atas ^`](#)
