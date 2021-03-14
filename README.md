@@ -192,7 +192,7 @@ Apabila masih mengalami kesulitan dalam proses instalasi **Dolibarr**, ada cara 
 
 Cara kedua yaitu dengan menggunakan layanan yang tersedia pada *web-hosting provider*. Dengan layanan tersebut kita hanya perlu satu kali klik untuk meng-install **Dolibarr**. Berikut langkah-lankah untuk melakukannya :
 1. Kita bisa mengunjungi *web-hosting provider* yang menyediakan *script* instalasi **Dolibarr** otomatis, seperti [Installatron](https://installatron.com/apps?q=dolibarr) atau [Softaculous](http://www.softaculous.com/apps/erp/Dolibarr).
-2. Apabila kita ingin menggunakan layanan dari [Installatron](http://installatron.com/prestashop). Maka, kita hanya perlu mengunjungi link tersebut lalu klik tombol **Install this Application**.
+2. Apabila kita ingin menggunakan layanan dari [Installatron](https://installatron.com/apps?q=dolibarr). Maka, kita hanya perlu mengunjungi link tersebut lalu klik tombol **Install this Application**.
 
     ![Installatron](https://user-images.githubusercontent.com/60084300/111055898-fa173b80-84ac-11eb-80a4-f377dd81a222.png)
 
@@ -283,5 +283,7 @@ Dalam aplikasi Dolibarr ini memiliki beberapa modul utama yaitu:
 
 # Referensi
 [About Dolibarr](https://www.dolibarr.org/) - Dolibarr
+[Install using Installatron](https://installatron.com/apps?q=dolibarr) - Dolibarr
+[Install using Softaculous](http://www.softaculous.com/apps/erp/Dolibarr) - Dolibarr
 
 [`^ kembali ke atas ^`](#)
