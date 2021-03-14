@@ -7,9 +7,9 @@
 **Dolibarr** merupakan software yang dibangun dengan penambahan modules, untuk mengelola perusahaan kecil atau menengah, freelancers atau yayasan. Dolibarr adalah project opensource berbasis pada server WAMP, MAMP atau LAMP. Dolibar berbasiskan web yang dapat dijalankan diberbagai operating system. Aplikasi ini dikembangkan dengan menggunakan bahasa pemrograman php dan database mysql. Aplikasi ini bersifat open source dan memiliki license GPL V.02.
 
 # Instalasi
+[`^ kembali ke atas ^`](#)
 
 ###Kebutuhan Sistem :
-
 - Unix, Linux atau Windows.
 - Apache Web server 1.3+.
 - PHP 5.2+.
@@ -17,7 +17,6 @@
 - RAM minimal 64 Mb+
 
 ###Proses Instalasi :
-
 1. Menginstall terlebih dahulu package yang dibutuhkan
     ```
     $ sudo apt-get update
