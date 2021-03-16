@@ -28,22 +28,61 @@ Alternatif database selain MySQL yang bisa Anda gunakan adalah: MariaDB 5.1+, at
     $ sudo apt-get install libapache2-mod-php
     $ sudo apt-get install php
     $ sudo apt-get install php-mysql
+    $ sudo apt-get install unzip
     ```
     
 2.  Mengunduh **Dolibarr** 13.0.1-4 ke dalam direktori kita
     ```
-    $ wget -c https://sourceforge.net/projects/dolibarr/files/Dolibarr%20installer%20for%20Debian-Ubuntu%20%28DoliDeb%29/13.0.1/dolibarr_13.0.1-4_all.deb/download -O           
-    dolibarr_13.0.1-4_all.deb
+    $ wget -c https://sourceforge.net/projects/dolibarr/files/Dolibarr%20ERP-CRM/13.0.1/dolibarr-13.0.1.zip/download -O dolibarr_13.0.1-4_all.zip
     ```
-    ![image](https://user-images.githubusercontent.com/60166815/111297569-54b4c100-8680-11eb-9fb4-d71809651fe5.png)
+    ![doli1](https://user-images.githubusercontent.com/60166815/111343072-a6c00b80-86ad-11eb-8816-04784dbcff82.png)
+
+3. Mengekstrak file zip ke dalam folder webroot yang kita inginkan. (Pada kali ini digunakan path /var/www/html/dolibarr)
+    ```
+    $ sudo unzip dolibarr_13.0.1-4_all.zip -d /var/www/html/dolibarr
+    ```
+    ![doli2a](https://user-images.githubusercontent.com/60166815/111343182-bfc8bc80-86ad-11eb-9af1-9d9cefd3c41f.png)
+    ![doli2b](https://user-images.githubusercontent.com/60166815/111343211-c6573400-86ad-11eb-91a9-f4e98d58d851.png)
+
+4. Membuat file php kosong untuk config dolibarr nya dan ubah kepemilikan ke user www-data
+    ```
+    $sudo touch /var/www/html/dolibarr/dolibarr-13.0.1/htdocs/conf/conf.php
+    $ sudo chown -R www-data:www-data /var/www/html/dolibarr
+    ```  
+    ![doli3](https://user-images.githubusercontent.com/60166815/111346413-c60c6800-86b0-11eb-955f-9ee9355e4e0c.png)
     
-3. Aktivasi database menggunakan MYSQL
+5. Restart Service Apache dan MySql
     ```
-    $ sudo service mysql start
+    $ sudo service apache2 restart ; sudo service mysql restart
     ```
-    ![image](https://user-images.githubusercontent.com/60166815/111297751-8d549a80-8680-11eb-9ef8-3d007234b2f2.png)
+    ![doli4](https://user-images.githubusercontent.com/60166815/111344248-c9065900-86ae-11eb-8b7e-e1e64b12dc86.png)
     
-4. Membuat database baru dan user untuk database
+6. Konfigurasi Apache web sever
+    ```
+    $ sudo a2enmod rewrite
+    $ sudo touch /etc/apache2/sites-available/dolibarr.conf
+    $ sudo ln -s /etc/apache2/sites-available/dolibarr.conf /etc/apache2/sites-enabled/dolibarr.conf
+    $ sudo nano /etc/apache2/sites-available/dolibarr.conf
+
+    <VirtualHost *:80>
+    ServerAdmin admin@your-domain.com
+    DocumentRoot /var/www/html/dolibarr/
+    ServerName your-domain.com
+    ServerAlias www.your-domain.com
+    <Directory /var/www/html/dolibarr/>
+    Options FollowSymLinks
+    AllowOverride All
+    Order allow,deny
+    allow from all
+    </Directory>
+    ErrorLog /var/log/apache2/your-domain.com-error_log
+    CustomLog /var/log/apache2/your-domain.com-access_log common
+    </VirtualHost>
+    ```
+    ![doli5a](https://user-images.githubusercontent.com/60166815/111343633-31a10600-86ae-11eb-8ae7-0d2e7af552e1.png)
+    ![doli5b](https://user-images.githubusercontent.com/60166815/111343646-336ac980-86ae-11eb-8fbd-a171c06a1877.png)
+
+7. Membuat database baru dan user untuk database
     ```
     $ sudo mysql -u root -p
     CREATE DATABASE db1;
@@ -52,39 +91,24 @@ Alternatif database selain MySQL yang bisa Anda gunakan adalah: MariaDB 5.1+, at
     FLUSH PRIVILEGES;
     ```
     ![image](https://user-images.githubusercontent.com/60166815/111298081-f89e6c80-8680-11eb-9cbd-f2c9aae5b33f.png)
-    
-5. Install **Dolibarr**
-    ```
-    $ sudo dpkg -i dolibarr_13.0.1-4_all.deb
-    ```
-    ![image](https://user-images.githubusercontent.com/60166815/111298110-ff2ce400-8680-11eb-9ef5-964e5025c587.png)
-    
-    Jika mengalami kegagalan dalam proses instalasi yang disebabkan dependancy, untuk memperbaiki package-package yang bermasalah
-    ```
-    $ sudo apt-get install -f
-    ```
-    ![image](https://user-images.githubusercontent.com/60166815/111298197-11a71d80-8681-11eb-8a5e-28d179ef7c72.png)
-    
-
-6. Mengganti ownership agar bisa dibaca dan ditulis oleh semua user
-    ```
-    $ sudo chmod 777 /var/www
-    ```  
-7. Restart Service
+   
+8. Merestart service Apache dan MySql kembali
     ```
     $ sudo service apache2 restart ; sudo service mysql restart
     ```
-    ![image](https://user-images.githubusercontent.com/60166815/111298238-1b308580-8681-11eb-965e-3f33aee37098.png)
+    ![doli7](https://user-images.githubusercontent.com/60166815/111344168-ba1fa680-86ae-11eb-8d1a-85fae7cbeaad.png)
     
- 8. Kunjungi alamat IP web server untuk meneruskan instalasi.
+ 9. Kunjungi alamat IP web server untuk meneruskan instalasi. (localhost/dolibarr)
+    - Buka folder htdocs
+     ![doli9a](https://user-images.githubusercontent.com/60166815/111344605-17b3f300-86af-11eb-9163-c9996b6a689c.png)
     - Pilih bahasa yang akan digunakan
      ![image](https://user-images.githubusercontent.com/60166815/111298890-e53fd100-8681-11eb-95b5-6aa8c5960a28.png)
     - Cek Prerequisites yang diperlukan, apabila sudah terpenuhi semua bisa melanjutkan proses dengan menekan tombol **start**
      ![image](https://user-images.githubusercontent.com/60166815/111298307-2edbec00-8681-11eb-9329-747c6edd8f3f.png)
-    - Konfigurasi database
-     ![image](https://user-images.githubusercontent.com/60166815/111298838-d0633d80-8681-11eb-894c-65d82e7a51f3.png)
+    - Konfigurasi web server dan database
+     ![doli9b](https://user-images.githubusercontent.com/60166815/111346897-416e1980-86b1-11eb-975a-01aa383ba5ae.png)
     - Apabila telah berhasil, maka bisa melanjutkan proses dengan **next step**
-     ![image](https://user-images.githubusercontent.com/60166815/111299137-289a3f80-8682-11eb-8521-476b3242dc4b.png)
+     ![doli9c](https://user-images.githubusercontent.com/60166815/111348578-eb9a7100-86b2-11eb-9204-2a50b3c06b21.png)
     - Set user admin untuk login ke **Dolibarr**
      ![image](https://user-images.githubusercontent.com/60166815/111299164-30f27a80-8682-11eb-952c-3191d9207bfa.png)
     - Setelah berhasil konfigurasi maka bisa login untuk masuk ke Dolibarr
