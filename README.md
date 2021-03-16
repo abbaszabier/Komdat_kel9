@@ -35,11 +35,13 @@ Alternatif database selain MySQL yang bisa Anda gunakan adalah: MariaDB 5.1+, at
     $ wget -c https://sourceforge.net/projects/dolibarr/files/Dolibarr%20installer%20for%20Debian-Ubuntu%20%28DoliDeb%29/13.0.1/dolibarr_13.0.1-4_all.deb/download -O           
     dolibarr_13.0.1-4_all.deb
     ```
+    ![image](https://user-images.githubusercontent.com/60166815/111297569-54b4c100-8680-11eb-9fb4-d71809651fe5.png)
     
 3. Aktivasi database menggunakan MYSQL
     ```
     $ sudo service mysql start
     ```
+    ![image](https://user-images.githubusercontent.com/60166815/111297751-8d549a80-8680-11eb-9ef8-3d007234b2f2.png)
     
 4. Membuat database baru dan user untuk database
     ```
@@ -49,37 +51,46 @@ Alternatif database selain MySQL yang bisa Anda gunakan adalah: MariaDB 5.1+, at
     GRANT ALL PRIVILEGES ON `db1`.* TO 'dolibarr1'@'localhost';
     FLUSH PRIVILEGES;
     ```
+    ![image](https://user-images.githubusercontent.com/60166815/111298081-f89e6c80-8680-11eb-9cbd-f2c9aae5b33f.png)
     
 5. Install **Dolibarr**
     ```
     $ sudo dpkg -i dolibarr_13.0.1-4_all.deb
     ```
+    ![image](https://user-images.githubusercontent.com/60166815/111298110-ff2ce400-8680-11eb-9ef5-964e5025c587.png)
     
     Jika mengalami kegagalan dalam proses instalasi yang disebabkan dependancy, untuk memperbaiki package-package yang bermasalah
     ```
     $ sudo apt-get install -f
     ```
+    ![image](https://user-images.githubusercontent.com/60166815/111298197-11a71d80-8681-11eb-8a5e-28d179ef7c72.png)
     
-6. Konfigurasi web server Apache
 
-7. Mengganti ownership agar bisa dibaca dan ditulis oleh semua user
+6. Mengganti ownership agar bisa dibaca dan ditulis oleh semua user
     ```
     $ sudo chmod 777 /var/www
-    ```
-    
-8. Restart Service
+    ```  
+7. Restart Service
     ```
     $ sudo service apache2 restart ; sudo service mysql restart
     ```
+    ![image](https://user-images.githubusercontent.com/60166815/111298238-1b308580-8681-11eb-965e-3f33aee37098.png)
     
- 9. Kunjungi alamat IP web server untuk meneruskan instalasi.
+ 8. Kunjungi alamat IP web server untuk meneruskan instalasi.
     - Pilih bahasa yang akan digunakan
+     ![image](https://user-images.githubusercontent.com/60166815/111298890-e53fd100-8681-11eb-95b5-6aa8c5960a28.png)
     - Cek Prerequisites yang diperlukan, apabila sudah terpenuhi semua bisa melanjutkan proses dengan menekan tombol **start**
+     ![image](https://user-images.githubusercontent.com/60166815/111298307-2edbec00-8681-11eb-9329-747c6edd8f3f.png)
     - Konfigurasi database
+     ![image](https://user-images.githubusercontent.com/60166815/111298838-d0633d80-8681-11eb-894c-65d82e7a51f3.png)
     - Apabila telah berhasil, maka bisa melanjutkan proses dengan **next step**
+     ![image](https://user-images.githubusercontent.com/60166815/111299137-289a3f80-8682-11eb-8521-476b3242dc4b.png)
     - Set user admin untuk login ke **Dolibarr**
+     ![image](https://user-images.githubusercontent.com/60166815/111299164-30f27a80-8682-11eb-952c-3191d9207bfa.png)
     - Setelah berhasil konfigurasi maka bisa login untuk masuk ke Dolibarr
-    - Tampilan homepage 
+     ![image](https://user-images.githubusercontent.com/60166815/111299222-45367780-8682-11eb-8b01-42da809edba3.png)
+    - Tampilan homepage
+      ![image](https://user-images.githubusercontent.com/60166815/111299259-51bad000-8682-11eb-8a24-e3886ddeeacd.png)
     
 # Konfigurasi
 [`^ kembali ke atas ^`](#)
