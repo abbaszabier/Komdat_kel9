@@ -204,7 +204,7 @@ Anda juga dapat mengekspor data dari Dolibarr menggunakan Export Module.
 # Otomatisasi
 [`^ kembali ke atas ^`](#)
 
-Apabila masih mengalami kesulitan dalam proses instalasi **Dolibarr**, ada cara alternatif yang lebih mudah. Cara pertama yaitu menggunakan `script shell` yang otomatis akan menjalankan semua perintah instalasi pada terminal. Contoh `script shell` yang dapat kita gunakan adalah setup.sh
+Apabila masih mengalami kesulitan dalam proses instalasi **Dolibarr**, ada cara alternatif yang lebih mudah. Cara pertama yaitu menggunakan `script shell` yang otomatis akan menjalankan semua perintah instalasi pada terminal. Contoh `script shell` yang dapat kita gunakan adalah [setup.sh](https://github.com/abbaszabier/Komdat_kel9/blob/main/setup.sh)
 
 Cara kedua yaitu dengan menggunakan layanan yang tersedia pada *web-hosting provider*. Dengan layanan tersebut kita hanya perlu satu kali klik untuk meng-install **Dolibarr**. Berikut langkah-lankah untuk melakukannya :
 1. Kita bisa mengunjungi *web-hosting provider* yang menyediakan *script* instalasi **Dolibarr** otomatis, seperti [Installatron](https://installatron.com/apps?q=dolibarr) atau [Softaculous](http://www.softaculous.com/apps/erp/Dolibarr).
